@@ -1,0 +1,47 @@
+.navigation {
+
+  @media only screen and (max-width: 945px) {
+    display: inline-block;
+  }
+
+  &__list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &__item {
+    float: left;
+  }
+
+  &__link {
+    display: block;
+    height: 29px;
+    padding: 0 10px;
+
+    color: #000;
+    line-height: 28px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      background: #ebecee;
+      border-bottom: 1px solid #cdcdcf;
+      color: #000;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 760px) {
+      padding: 0 7px;
+    }
+
+    @media only screen and (max-width: 685px) {
+      padding: 0 5px;
+    }
+
+    @media only screen and (max-width: 350px) {
+      padding: 0 2px;
+    }
+  }
+}

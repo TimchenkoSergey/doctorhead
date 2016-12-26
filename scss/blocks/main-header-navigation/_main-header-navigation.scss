@@ -1,0 +1,93 @@
+.main-header-navigation {
+  color: #ffffff;
+  background-color: #3ebcd4;
+  border-radius: 3px;
+  position: relative;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    float: left;
+  }
+
+  &__link {
+    font-size: 12px;
+    font-family: PlumbBold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 21px;
+    color: #fff;
+
+    &:hover {
+      background: #000;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__stock {
+    background-image: url("../img/stock_btn_bg.png");
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: PlumbBold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  &__sub-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding-top: 10px;
+    display: none;
+  }
+
+  &__sub-menu-wrap {
+    background-color: #3ebcd4;
+    border-radius: 5px;
+  }
+
+  &__row {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  &__inner-link {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+
+  &__two-col {
+    padding: 0;
+  }
+
+  &__description {
+    padding-top: 10px;
+  }
+}

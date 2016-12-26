@@ -1,0 +1,224 @@
+.user-action {
+
+  @media only screen and (max-width: 945px) {
+    display: inline-block;
+  }
+
+  &__item {
+    width: auto;
+    float: left;
+    padding: 0 10px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      background: #ebecee;
+      border-bottom: 1px solid #cdcdcf;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1125px) {
+      padding: 0 8px;
+    }
+
+    @media only screen and (max-width: 1045px) {
+      padding: 0 6px;
+    }
+
+    @media only screen and (max-width: 965px) {
+      padding: 0 4px;
+    }
+  }
+
+  &__item--login {
+
+    &:hover .user-action__login-popup {
+      display: block;
+    }
+  }
+
+  &__count {
+    float: left;
+  }
+
+  &__number {
+    margin-left: 4px;
+
+    line-height: 100%;
+    color: #000000;
+    font-size: 12px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 28px;
+    float: left;
+
+    &--basket {
+      background: url("../img/top_basket.png") no-repeat center center;
+    }
+
+    &--favorites {
+      background: url("../img/top_favorites.png") no-repeat center center;
+    }
+
+    &--compare {
+      background: url("../img/top_compare.png") no-repeat center center;
+    }
+
+    &--user {
+      background: url("../img/top_user.png") no-repeat center center;
+    }
+  }
+
+  &__come-in {
+    padding-top: 7px;
+    padding-left: 5px;
+    font-size: 10px;
+    float: left;
+    text-transform: uppercase;
+  }
+
+  &__login-popup {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    z-index: 5;
+    display: none;
+    padding-top: 8px;
+  }
+
+  &__popup-wrap {
+    position: relative;
+    padding: 15px;
+    background-color: #3ebcd4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &::before {
+      content: "";
+      border: 5px solid transparent;
+      border-bottom: 5px solid #3ebcd4;
+      position: absolute;
+      top: -10px;
+      right: 35px;
+    }
+  }
+
+  &__popup-head {
+    font-family: PlumbBold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  &__row {
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    background: #fff;
+    height: 18px;
+    line-height: 18px;
+    border: none;
+    color: #7f7f7f;
+    font-size: 12px;
+    padding: 0 6px;
+    width: 200px;
+    border-radius: 4px;
+  }
+
+  &__label {
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__button-come-in {
+    font-family: PlumbBold;
+    height: 18px;
+    font-size: 10px;
+    color: #3dbcd4;
+    text-transform: uppercase;
+    border: none;
+    padding: 0 8px 1px 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #000000;
+      color: #fff;
+    }
+  }
+
+  &__wrapper {
+    float: left;
+  }
+
+  &__link--white {
+    font-family: PlumbBold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    padding-bottom: 5px;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  &__form-bottom {
+    margin-top: 2px;
+    background-color: #3ebcd4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__social {
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  &__icon-social {
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    margin-right: 7px;
+    text-decoration: none;
+
+    &--fb {
+      background: url("../img/fb2.png") no-repeat left top;
+    }
+
+    &--tw {
+      background: url("../img/tw.png") no-repeat left top;
+    }
+
+    &--vk {
+      background: url("../img/vk2.png") no-repeat left top;
+    }
+
+    &--gg {
+      background: url("../img/gp.png") no-repeat left top;
+    }
+
+    &--ya {
+      background: url("../img/yandex.png") no-repeat left top;
+    }
+
+    &--ok {
+      background: url("../img/ok.png") no-repeat left top;
+    }
+
+    &:hover {
+      background-position: 0 -20px;
+    }
+  }
+}

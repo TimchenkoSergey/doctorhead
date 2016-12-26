@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="scss/main.min.css">
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body class="page">
+    <div class="page__wrap">
+
+        <div class="top-navigation-panel container">
+            <div class="top-navigation__row row clearfix">
+                <div class="top-navigation-panel__navigation">
+
+                    <nav class="navigation">
+                        <ul class="navigation__list clearfix">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">О компании</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Магазины</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Новости</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Обзоры</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Статьи</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Форум</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Сервис</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Доставка и Оплата</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Советы</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="top-navigation-panel__user-action clearfix">
+                    <div class="user-action">
+                        <div class="user-action__item">
+                            <a class="user-action__link" href="/#">
+                                <div class="user-action__icon user-action__icon--basket"></div>
+                                <div class="user-action__count">
+                                    <span class="user-action__number">0</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="user-action__item">
+                            <div class="user-action__icon user-action__icon--favorites"></div>
+                            <div class="user-action__count">
+                                <span class="user-action__number">0</span>
+                            </div>
+                        </div>
+
+                        <div class="user-action__item">
+                            <div class="user-action__icon user-action__icon--compare"></div>
+                            <div class="user-action__count">
+                                <span class="user-action__number">0</span>
+                            </div>
+                        </div>
+
+                        <div class="user-action__item user-action__item--login">
+                            <div class="user-action__icon user-action__icon--user"></div>
+                            <div class="user-action__come-in">Войти</div>
+                            <div class="user-action__login-popup">
+                                <div class="user-action__popup-wrap">
+                                    <div class="user-action__auth">
+                                        <form class="user-action__form">
+                                            <div class="user-action__form-top">
+                                                <h3 class="user-action__popup-head">Войти</h3>
+                                                <div>
+                                                    <div class="user-action__row">
+                                                        <input class="user-action__input" type="text">
+                                                    </div>
+                                                    <div class="user-action__row">
+                                                        <input class="user-action__input" type="text">
+                                                    </div>
+                                                    <input class="user-action__checkbox" id="remember-user" type="checkbox">
+                                                    <label class="user-action__label" for="remember-user" title="Запомнить меня на этом компьютере">
+                                                        Запомнить меня
+                                                    </label>
+                                                    <div class="user-action__new-line clearfix">
+                                                        <div class="user-action__wrapper">
+                                                            <button class="user-action__button-come-in" type="submit" value="Войти">
+                                                                Войти
+                                                                <span class="user-action__arrow glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="user-action__wrapper">
+                                                            <a href="#" class="user-action__link user-action__link--white">Забыли пароль?</a>
+                                                            <a href="#" class="user-action__link user-action__link--white">Регистрация</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="user-action__form-bottom">
+                                    <div class="user-action__popup-head">Войти как пользователь:</div>
+                                    <div class="user-action__social clearfix">
+                                        <a class="user-action__icon-social user-action__icon-social--fb" title="Facebook"      href="#"></a>
+                                        <a class="user-action__icon-social user-action__icon-social--tw" title="Twitter"       href="#"></a>
+                                        <a class="user-action__icon-social user-action__icon-social--vk" title="ВКонтакте"     href="#"></a>
+                                        <a class="user-action__icon-social user-action__icon-social--gg" title="Google"        href="#"></a>
+                                        <a class="user-action__icon-social user-action__icon-social--ya" title="Яндекс"        href="#"></a>
+                                        <a class="user-action__icon-social user-action__icon-social--ok" title="Одноклассники" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="slider-main">
+                <header class="header">
+                    <div class="header__wrap container">
+                        <div class="header__top row clearfix">
+
+                            <div class="logo">
+                                <div class="logo__wrap">
+                                    <a class="logo__link" href="#">
+                                        <img class="logo__image" src="img/logo.png">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="work-hours">
+                                <span class="work-hours__icon glyphicon glyphicon-time" aria-hidden="true"></span>
+                                <div class="work-hours__wrap">
+                                    <span class="work-hours__information">
+                                        с 10:00 до 22:00
+                                    </span>
+                                    <span class="work-hours__information work-hours__information--small">
+                                        без перерыва и выходных
+                                    </span>
+                                    <span class="work-hours__information work-hours__information--small">
+                                        сб-вс: c 10:00 до 22:00
+                                        <a class="work-hours__link" href="#">
+                                            Москва | Санкт-Петербург
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="search-top">
+                                <form class="search-top__form" action="#">
+                                    <div class="search-top__wrap">
+                                        <input class="search-top__input-search" type="text"   name="query"  id="search-query">
+                                        <button class="search-top__input-icon" type="submit" name="submit" id="search-submit" value="">
+                                            <span class="search-top__icon glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="contacts-phone">
+                                <span class="contacts-phone__icon glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                <div class="contacts-phone__wrap">
+                                    <div class="contacts-phone__phones">
+                                        <span class="contacts-phone__phone">8 (495) 646 61 55</span>
+                                        <span class="contacts-phone__phone">8 (812) 490 76 67</span>
+                                        <span class="contacts-phone__phone">8 (800) 333 09 89</span>
+                                    </div>
+                                    <div class="contacts-phone__call-back">
+                                        <a class="contacts-phone__call-back-link" href="#">Заказать обратный звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="header__bottom row">
+                            <nav class="main-header-navigation clearfix">
+                                <ul class="main-header-navigation__list">
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Гид подарков</a>
+                                        <div class="main-header-navigation__sub-menu">
+                                            <div class="main-header-navigation__sub-menu-wrap main-header-navigation__sub-menu-wrap--one-col">
+                                            <div class="main-header-navigation__row row">
+                                                <div class="main-header-navigation__two-col col-md-6">
+                                                    <div class="main-header-navigation__row row">
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-header-navigation__two-col col-md-6">
+                                                    <div class="main-header-navigation__row row">
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-header-navigation__row row">
+                                                <div class="main-header-navigation__two-col col-md-6">
+                                                    <div class="main-header-navigation__row row">
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-header-navigation__two-col col-md-6">
+                                                    <div class="main-header-navigation__row row">
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="main-header-navigation__four-col col-md-3">
+                                                            <a class="main-header-navigation__inner-link" href="#">
+                                                                <div class="main-header-navigation__image-wrap">
+                                                                    <img class="main-header-navigation__image" src="img/item.png">
+                                                                </div>
+                                                                <div class="main-header-navigation__description">
+                                                                    Наушники полноразмерные
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Наушники</a>
+                                        <div class="main-header-navigation__sub-menu">
+                                            <div class="main-header-navigation__sub-menu-wrap main-header-navigation__sub-menu-wrap--two-col">
+                                                <div class="main-header-navigation__row row">
+                                                    <div class="main-header-navigation__two-col col-md-6">
+                                                        <div class="main-header-navigation__row row">
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="main-header-navigation__row row">
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="main-header-navigation__four-col col-md-3">
+                                                                <a class="main-header-navigation__inner-link" href="#">
+                                                                    <div class="main-header-navigation__image-wrap">
+                                                                        <img class="main-header-navigation__image" src="img/item.png">
+                                                                    </div>
+                                                                    <div class="main-header-navigation__description">
+                                                                        Наушники полноразмерные
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-header-navigation__two-col main-header-navigation__two-col--banner col-md-6">
+                                                        <div class="banner">
+                                                            <div class="banner__picture">
+                                                                <img class="banner__image" src="img/banner.jpg">
+                                                            </div>
+                                                            <div class="banner__inform-left">
+                                                                <div class="banner__product-name">
+                                                                    <a class="banner__link" href="#">Sony Walkman NW-ZX2 + Sony HD-E2S</a>
+                                                                </div>
+                                                                <div class="banner__product-price">49990.–</div>
+                                                            </div>
+                                                            <div class="banner__inform-right">
+                                                                <div class="banner__product-raiting">
+                                                                    <div class="banner__rait">5</div>
+                                                                    <div class="banner__rait">5</div>
+                                                                </div>
+                                                                <div class="banner__product-description">
+                                                                    Семейство легендарных плееров Sony Walkman® пополнилось новой флагманской
+                                                                    моделью, созданной специально для истинных ценителей музыки.
+                                                                </div>
+                                                                <div class="banner__action">
+                                                                    <div class="banner__action-wrap">
+                                                                        <a href="#" class="banner__button banner__button--favorite">
+                                                                            <span class="banner__icon"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="banner__action-wrap">
+                                                                        <a href="#" class="banner__button banner__button--compare">
+                                                                            <span class="banner__icon"></span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Custom наушники</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Плееры</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Портативная акустика</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Усилители</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Hi-Fi / Hi-END</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Винил</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__link">Аксессуары</a>
+                                    </li>
+                                    <li class="main-header-navigation__item">
+                                        <a href="#" class="main-header-navigation__stock"></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

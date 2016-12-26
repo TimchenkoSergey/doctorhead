@@ -1,0 +1,32 @@
+.search-top {
+  margin-right: 8%;
+  padding-top: 13px;
+  float: left;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__input-search {
+    border: none;
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 2px;
+    padding: 5px 30px 5px 5px;
+    width: 333px;
+    border-radius: 3px;
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 4.5px;
+    right: 4px;
+    background: none;
+    border: none;
+  }
+
+  &__icon {
+    color: #3ebcd4;
+  }
+}

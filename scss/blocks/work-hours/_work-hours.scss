@@ -1,0 +1,39 @@
+.work-hours {
+  margin-right: 8%;
+  float: left;
+  color: #ffffff;
+
+  &__icon {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-right: 10px;
+  }
+
+  &__wrap {
+    float: left;
+  }
+
+  &__information {
+    display: block;
+    font-family: PlumbBold;
+    font-size: 20px;
+    text-align: right;
+    white-space: nowrap;
+
+    &--small {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #3ebcd4;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
