@@ -3,15 +3,48 @@
   background-color: #3ebcd4;
   border-radius: 3px;
   position: relative;
+  border: none;
+  min-height: 0;
+  margin-bottom: 0;
+
+  &__outer-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+
+  &__mobile-button {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    border-color: #fff !important;
+
+    &:hover {
+      opacity: 0.5 !important;
+      transition: 0.4s !important;
+      background-color: transparent !important;
+    }
+  }
+  
+  &__icon-mobile {
+    background-color: #FFF !important;
+  }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: none;
+    color: #fff;
   }
 
   &__item {
     float: left;
+    position: static !important;
+
+    @media (max-width: 990px) {
+      display: block;
+      float: none;
+    }
   }
 
   &__link {
@@ -21,14 +54,40 @@
     text-decoration: none;
     display: block;
     height: 30px;
-    line-height: 30px;
-    padding: 0 21px;
-    color: #fff;
+    line-height: 30px !important;
+    padding: 0 21px !important;
+    color: #fff !important;
+    position: static !important;
+    transition: 0.3s;
 
     &:hover {
-      background: #000;
-      text-decoration: none;
-      color: #fff;
+      background: #000 !important;
+      text-decoration: none !important;
+      color: #fff !important;
+    }
+
+    @media (max-width: 1201px) {
+      padding: 0 20px !important;
+    }
+
+    @media (max-width: 1170px) {
+      padding: 0 18px !important;
+    }
+
+    @media (max-width: 1120px) {
+      padding: 0 16px !important;
+    }
+
+    @media (max-width: 1090px) {
+      padding: 0 14px !important;
+    }
+
+    @media (max-width: 1050px) {
+      padding: 0 12px !important;
+    }
+
+    @media (max-width: 1010px) {
+      padding: 0 10px !important;
     }
   }
 
@@ -47,6 +106,11 @@
     height: 20px;
     margin-top: 5px;
     margin-left: 15px;
+    padding: 0 !important;
+
+    @media (max-width: 990px) {
+      display: none !important;
+    }
   }
 
   &__sub-menu {
@@ -63,10 +127,9 @@
   }
 
   &__row {
-    padding-bottom: 20px;
-    padding-top: 20px;
     margin: 0;
   }
+
 
   &__inner-link {
     text-align: center;
@@ -85,9 +148,30 @@
 
   &__two-col {
     padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__two-col--banner {
+    background-color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
 
   &__description {
     padding-top: 10px;
+  }
+
+  &__row--padding {
+    padding-top: 0px;
+    padding-bottom:10px;
+  }
+
+  &__row--padding-top {
+    padding-top: 30px;
   }
 }

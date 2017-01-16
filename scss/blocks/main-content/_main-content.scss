@@ -1,3 +1,6 @@
 .main-content {
-
+  &__item {
+    position: relative;
+    z-index: 5;
+  }
 }

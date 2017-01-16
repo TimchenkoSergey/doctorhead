@@ -1,0 +1,99 @@
+.product-item {
+  margin-right: 8px;
+  background: #fff;
+  border: 1px solid #d4d5da;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  z-index: 5;
+
+  &:hover &__wrap {
+    display: block;
+  }
+
+  &__moves {
+    height: 30px;
+    padding-left: 14px;
+  }
+
+  &__link {
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__name {
+    font-family: 'PlumbBold';
+    font-size: 12px;
+    color: #3ebcd4;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 140%;
+    padding-left: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__price {
+    font-family: 'PlumbBold';
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  &__wrap {
+    display: none;
+  }
+
+  &__more-information {
+    display: none;
+  }
+
+  &__more-information {
+    display: block;
+    position: absolute;
+    width: calc(100% - 8px);
+    background: #3ebcd4;
+    top: -1px;
+    left: 229px;
+    border-radius: 4px;
+    height: 500px;
+    padding: 10px;
+    padding-left: 16px;
+    z-index: 20;
+    overflow: hidden;
+  }
+
+  &__status {
+    background: #fff;
+    font-family: 'PlumbBold';
+    font-size: 9px;
+    text-transform: uppercase;
+    padding: 4px 8px 3px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  &__description {
+    font-family: Arial;
+    line-height: 168%;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  &__count-rewies {
+    background: url(../img/comment-count.png) no-repeat 0 0;
+    font-size: 11px;
+    font-family: Arial;
+    width: 21px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    float: right;
+    position: relative;
+    padding-right: 1px;
+  }
+}

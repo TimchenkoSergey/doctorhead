@@ -1,3 +1,72 @@
 .slider-main {
-  background-image: url("../img/back.jpg");
+  transition: 0.3s;
+  cursor: pointer;
+  background-size: cover;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__images-wrap {
+    display: none;
+  }
+
+  &__links-wrap {
+    display: none;
+  }
+
+  &__prev-arrow {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 200px;
+    left: 0;
+    background: url("../img/arrow-for-slider.png") no-repeat 0 0;
+
+    &:hover {
+      background-position: -23px 0;
+    }
+  }
+
+  &__next-arrow {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 200px;
+    right: 0;
+    background: url("../img/arrow-for-slider.png") no-repeat 0 -23px;
+
+    &:hover {
+      background-position: -23px -23px;
+    }
+  }
+
+  &__pagination-wrap {
+    padding-top: 343px;
+    float: right;
+  }
+
+  &__pagination-item {
+    font-family: PlumbBold;
+    display: block;
+    width: 23px;
+    height: 25px;
+    float: left;
+    color: #3dbcd4;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      background: url(../img/selected-slide.png) no-repeat 0 0;
+      color: #ffffff;
+    }
+
+    &--active {
+      background: url(../img/selected-slide.png) no-repeat 0 0;
+      color: #ffffff;
+    }
+  }
 }

@@ -1,5 +1,38 @@
 @import "variables";
 
+.tooltip {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-family: "PlumbBold" !important;
+}
+
+.tooltip-arrow {
+  text-transform: uppercase;
+  color: #3dbcd4 !important;
+  border-bottom-color: #3dbcd4 !important;
+  opacity: 1 !important;
+}
+
+.tooltip-inner {
+  text-transform: uppercase;
+  color: #ffffff !important;
+  background: #3dbcd4 !important;
+  opacity: 1 !important;
+  font-family: "PlumbBold" !important;
+  font-size: 10px !important;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+   background-color: #3ebcd4 !important;
+  opacity: 1 !important;
+ }
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: #3ebcd4 !important;
+  opacity: 0.4 !important;
+}
+
+
 //imports modules
 @import "blocks/page/_page.scss";
 @import "blocks/top-navigation-panel/_top-navigation-panel.scss";
@@ -14,3 +47,13 @@
 @import "blocks/contacts-phone/_contacts-phone.scss";
 @import "blocks/main-header-navigation/_main-header-navigation.scss";
 @import "blocks/banner/_banner.scss";
+@import "blocks/special-products-main/_special-products-main.scss";
+@import "blocks/product-item/_product-item.scss";
+@import "blocks/banners-section/_banners-section.scss";
+@import "blocks/event-list/_event-list.scss";
+@import "blocks/event/_event.scss";
+@import "blocks/social-blocks/_social-blocks.scss";
+@import "blocks/why-we/_why-we.scss";
+@import "blocks/brands-list/_brands-list.scss";
+@import "blocks/main-tabs/_main-tabs.scss";
+@import "blocks/footer/_footer.scss";

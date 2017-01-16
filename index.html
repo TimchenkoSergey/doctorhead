@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel="stylesheet" href="libs/owl/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl/owl.transitions.css">
+    <link rel="stylesheet" href="libs/owl/owl.theme.css">
     <link rel="stylesheet" href="scss/main.min.css">
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
+    <script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
 </head>
 <body class="page">
     <div class="page__wrap">
@@ -150,21 +150,23 @@
                                 </div>
                             </div>
 
-                            <div class="work-hours">
-                                <span class="work-hours__icon glyphicon glyphicon-time" aria-hidden="true"></span>
-                                <div class="work-hours__wrap">
-                                    <span class="work-hours__information">
-                                        с 10:00 до 22:00
-                                    </span>
-                                    <span class="work-hours__information work-hours__information--small">
-                                        без перерыва и выходных
-                                    </span>
-                                    <span class="work-hours__information work-hours__information--small">
-                                        сб-вс: c 10:00 до 22:00
-                                        <a class="work-hours__link" href="#">
-                                            Москва | Санкт-Петербург
-                                        </a>
-                                    </span>
+                            <div class="work-hours clearfix">
+                                <div class="work-hours__wrapper clearfix">
+                                    <span class="work-hours__icon glyphicon glyphicon-time" aria-hidden="true"></span>
+                                    <div class="work-hours__wrap">
+                                        <span class="work-hours__information">
+                                            с 10:00 до 22:00
+                                        </span>
+                                        <span class="work-hours__information work-hours__information--small">
+                                            без перерыва и выходных
+                                        </span>
+                                        <span class="work-hours__information work-hours__information--small">
+                                            сб-вс: c 10:00 до 22:00
+                                            <a class="work-hours__link" href="#">
+                                                Москва | Санкт-Петербург
+                                            </a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -179,16 +181,18 @@
                                 </form>
                             </div>
 
-                            <div class="contacts-phone">
-                                <span class="contacts-phone__icon glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                                <div class="contacts-phone__wrap">
-                                    <div class="contacts-phone__phones">
-                                        <span class="contacts-phone__phone">8 (495) 646 61 55</span>
-                                        <span class="contacts-phone__phone">8 (812) 490 76 67</span>
-                                        <span class="contacts-phone__phone">8 (800) 333 09 89</span>
-                                    </div>
-                                    <div class="contacts-phone__call-back">
-                                        <a class="contacts-phone__call-back-link" href="#">Заказать обратный звонок</a>
+                            <div class="contacts-phone clearfix">
+                                <div class="contacts-phone__wrapper clearfix">
+                                    <span class="contacts-phone__icon glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                    <div class="contacts-phone__wrap">
+                                        <div class="contacts-phone__phones">
+                                            <span class="contacts-phone__phone">8 (495) 646 61 55</span>
+                                            <span class="contacts-phone__phone">8 (812) 490 76 67</span>
+                                            <span class="contacts-phone__phone">8 (800) 333 09 89</span>
+                                        </div>
+                                        <div class="contacts-phone__call-back">
+                                            <a class="contacts-phone__call-back-link" href="#">Заказать обратный звонок</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -196,8 +200,23 @@
                         </div>
 
                         <div class="header__bottom row">
-                            <nav class="main-header-navigation clearfix">
-                                <ul class="main-header-navigation__list">
+                            <nav class="main-header-navigation clearfix navbar navbar-default">
+
+                                <div class="main-header-navigation__mobile-block navbar-header">
+                                    <button class="main-header-navigation__mobile-button navbar-toggle collapsed"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#top-menu"
+                                            aria-expanded="false">
+                                        <span class="main-header-navigation__icon-mobile sr-only">Toggle navigation</span>
+                                        <span class="main-header-navigation__icon-mobile icon-bar"></span>
+                                        <span class="main-header-navigation__icon-mobile icon-bar"></span>
+                                        <span class="main-header-navigation__icon-mobile icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="main-header-navigation__outer-wrapper collapse navbar-collapse" id="top-menu">
+                                    <ul class="main-header-navigation__list nav navbar-nav">
                                     <li class="main-header-navigation__item">
                                         <a href="#" class="main-header-navigation__link">Гид подарков</a>
                                         <div class="main-header-navigation__sub-menu">
@@ -390,8 +409,8 @@
                                         <div class="main-header-navigation__sub-menu">
                                             <div class="main-header-navigation__sub-menu-wrap main-header-navigation__sub-menu-wrap--two-col">
                                                 <div class="main-header-navigation__row row">
-                                                    <div class="main-header-navigation__two-col col-md-6">
-                                                        <div class="main-header-navigation__row row">
+                                                    <div class="main-header-navigation__two-col main-header-navigation__two-col--pad col-md-6">
+                                                        <div class="main-header-navigation__row main-header-navigation__row--padding row">
                                                             <div class="main-header-navigation__four-col col-md-3">
                                                                 <a class="main-header-navigation__inner-link" href="#">
                                                                     <div class="main-header-navigation__image-wrap">
@@ -433,7 +452,7 @@
                                                                 </a>
                                                             </div>
                                                         </div>
-                                                        <div class="main-header-navigation__row row">
+                                                        <div class="main-header-navigation__row main-header-navigation__row--padding-top row">
                                                             <div class="main-header-navigation__four-col col-md-3">
                                                                 <a class="main-header-navigation__inner-link" href="#">
                                                                     <div class="main-header-navigation__image-wrap">
@@ -477,20 +496,20 @@
                                                         </div>
                                                     </div>
                                                     <div class="main-header-navigation__two-col main-header-navigation__two-col--banner col-md-6">
-                                                        <div class="banner">
-                                                            <div class="banner__picture">
-                                                                <img class="banner__image" src="img/banner.jpg">
-                                                            </div>
+                                                        <div class="banner clearfix">
                                                             <div class="banner__inform-left">
                                                                 <div class="banner__product-name">
                                                                     <a class="banner__link" href="#">Sony Walkman NW-ZX2 + Sony HD-E2S</a>
                                                                 </div>
                                                                 <div class="banner__product-price">49990.–</div>
+                                                                <div class="banner__picture">
+                                                                    <img class="banner__image" src="img/banner.jpg">
+                                                                </div>
                                                             </div>
                                                             <div class="banner__inform-right">
-                                                                <div class="banner__product-raiting">
-                                                                    <div class="banner__rait">5</div>
-                                                                    <div class="banner__rait">5</div>
+                                                                <div class="banner__product-raiting clearfix">
+                                                                    <div class="banner__rait banner__rait--stars">5</div>
+                                                                    <div class="banner__rait banner__rait--favorites">5</div>
                                                                 </div>
                                                                 <div class="banner__product-description">
                                                                     Семейство легендарных плееров Sony Walkman® пополнилось новой флагманской
@@ -498,13 +517,13 @@
                                                                 </div>
                                                                 <div class="banner__action">
                                                                     <div class="banner__action-wrap">
-                                                                        <a href="#" class="banner__button banner__button--favorite">
-                                                                            <span class="banner__icon"></span>
+                                                                        <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                                            <span class="banner__icon banner__icon--favorite"></span>
                                                                         </a>
                                                                     </div>
                                                                     <div class="banner__action-wrap">
-                                                                        <a href="#" class="banner__button banner__button--compare">
-                                                                            <span class="banner__icon"></span>
+                                                                        <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                                            <span class="banner__icon banner__icon--compare"></span>
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -540,13 +559,2082 @@
                                         <a href="#" class="main-header-navigation__stock"></a>
                                     </li>
                                 </ul>
+                                </div>
                             </nav>
                         </div>
                     </div>
                 </header>
+
+                <div class="slider-main__wrapper container">
+                    <div class="slider-main__images-wrap">
+                        <img class="slider-main__image" src="img/back.jpg" alt="">
+                        <img class="slider-main__image" src="img/file-05.jpg" alt="">
+                        <img class="slider-main__image" src="img/file-08.jpg" alt="">
+                    </div>
+                    <div class="slider-main__links-wrap">
+                        <a href="#" class="slider-main__link"></a>
+                        <a href="#" class="slider-main__link"></a>
+                        <a href="#" class="slider-main__link"></a>
+                    </div>
+                    <div class="slider-main__navigation-wrap">
+                        <div class="slider-main__prev-arrow"></div>
+                        <div class="slider-main__next-arrow"></div>
+                    </div>
+                    <div class="slider-main__pagination-wrap clearfix"></div>
+                </div>
+
+                <div class="special-products-main container">
+                    <ul class="special-products-main__tabs-list nav nav-tabs" role="tablist">
+                        <li class="special-products-main__tabs-control active" role="presentation">
+                            <a class="special-products-main__tabs-control-link"
+                               href="#home"
+                               aria-controls="home"
+                               role="tab"
+                               data-toggle="tab">
+                                DOCTORHEAD РЕКОМЕНДУЕТ
+                            </a>
+                        </li>
+                        <li class="special-products-main__tabs-control" role="presentation">
+                            <a class="special-products-main__tabs-control-link"
+                               href="#profile"
+                               aria-controls="profile"
+                               role="tab"
+                               data-toggle="tab">
+                                новинки
+                            </a>
+                        </li>
+                        <li class="special-products-main__tabs-control" role="presentation">
+                            <a class="special-products-main__tabs-control-link"
+                               href="#messages"
+                               aria-controls="messages"
+                               role="tab"
+                               data-toggle="tab">
+                                Скоро в продаже
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="special-products-main__tab-content tab-content">
+                        <div class="special-products-main__tab tab-pane active" role="tabpanel"  id="home">
+                            <div class="main-carousel owl-carousel">
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                            <div class="banner__action-wrap">
+                                                <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                    <span class="banner__icon banner__icon--cart"></span>
+                                                </a>
+                                            </div>
+                                            <div class="banner__action-wrap">
+                                                <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                    <span class="banner__icon banner__icon--favorite"></span>
+                                                </a>
+                                            </div>
+                                            <div class="banner__action-wrap">
+                                                <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                    <span class="banner__icon banner__icon--compare"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-products-main__tab tab-pane" role="tabpanel"  id="profile">
+                            <div class="main-carousel owl-carousel">
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-products-main__tab tab-pane" role="tabpanel"  id="messages">
+                            <div class="main-carousel owl-carousel">
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-item item">
+                                    <a href="#" class="product-item__link">
+                                        <h4 class="product-item__name">Sony 1450 sr 29</h4>
+                                    </a>
+                                    <p class="product-item__price">124 490</p>
+                                    <div class="product-item__moves">
+                                        <div class="product-item__wrap">
+                                            <div class="banner__action">
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button banner__button--padding" data-toggle="tooltip" data-placement="bottom" title="В корзину">
+                                                        <span class="banner__icon banner__icon--cart"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="В избраное">
+                                                        <span class="banner__icon banner__icon--favorite"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__action-wrap">
+                                                    <a href="#" class="banner__button" data-toggle="tooltip" data-placement="bottom" title="Сравнить">
+                                                        <span class="banner__icon banner__icon--compare"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__picture">
+                                        <a href="#" class="product-item__link">
+                                            <img class="product-item__img" src="img/product1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <section class="banners-section container">
+                <div class="banners-section__row row">
+                    <div class="banners-section__col-two col-md-7">
+                        <img class="banners-section__img" src="img/banner-section1.png" alt="">
+                    </div>
+                    <div class="banners-section__col-two col-md-5">
+                        <div class="banners-section__row row">
+                            <div class="banners-section__col-two col-md-12">
+                                <img class="banners-section__img" src="img/banner-section2.png" alt="">
+                            </div>
+                            <div class="banners-section__col-two col-md-12">
+                                <img class="banners-section__img" src="img/banner-section3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="main-content__container container">
+                <div class="main-content__wrap row">
+                    <section class="event-list col-md-9">
+                        <h4 class="event-list__header clearfix">ЛЕНТА СОБЫТий DOCTORHEAD</h4>
+                        <div class="event-list__row row">
+                            <div class="event-list__two-col col-md-6">
+                                <article class="event clearfix">
+                                <div class="event__wrap-left">
+                                    <img class="event__img" src="img/event-img.png" alt="">
+                                </div>
+                                <div class="event__wrap-right">
+                                    <h5 class="event__header">
+                                        <a class="event__link" href="#">
+                                            Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                        </a>
+                                    </h5>
+                                    <p class="event__text">
+                                        Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                        по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                        персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                    </p>
+                                    <p class="event__link-more">
+                                        <a class="event__more" href="#">
+                                            Читать дальше
+                                            <span class="glyphicon glyphicon-menu-right"></span>
+                                        </a>
+                                    </p>
+                                </div>
+
+                            </article>
+                                <article class="event clearfix">
+                                    <div class="event__wrap-left">
+                                        <img class="event__img" src="img/event-img.png" alt="">
+                                    </div>
+                                    <div class="event__wrap-right">
+                                        <h5 class="event__header">
+                                            <a class="event__link" href="#">
+                                                Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                            </a>
+                                        </h5>
+                                        <p class="event__text">
+                                            Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                            по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                            персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                        </p>
+                                        <p class="event__link-more">
+                                            <a class="event__more" href="#">
+                                                Читать дальше
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </article>
+                                <article class="event clearfix">
+                                    <div class="event__wrap-left">
+                                        <img class="event__img" src="img/event-img.png" alt="">
+                                    </div>
+                                    <div class="event__wrap-right">
+                                        <h5 class="event__header">
+                                            <a class="event__link" href="#">
+                                                Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                            </a>
+                                        </h5>
+                                        <p class="event__text">
+                                            Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                            по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                            персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                        </p>
+                                        <p class="event__link-more">
+                                            <a class="event__more" href="#">
+                                                Читать дальше
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </article>
+                            </div>
+                            <div class="event-list__two-col col-md-6">
+                                <article class="event clearfix">
+                                    <div class="event__wrap-left">
+                                        <img class="event__img" src="img/event-img.png" alt="">
+                                    </div>
+                                    <div class="event__wrap-right">
+                                        <h5 class="event__header">
+                                            <a class="event__link" href="#">
+                                                Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                            </a>
+                                        </h5>
+                                        <p class="event__text">
+                                            Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                            по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                            персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                        </p>
+                                        <p class="event__link-more">
+                                            <a class="event__more" href="#">
+                                                Читать дальше
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </article>
+                                <article class="event clearfix">
+                                    <div class="event__wrap-left">
+                                        <img class="event__img" src="img/event-img.png" alt="">
+                                    </div>
+                                    <div class="event__wrap-right">
+                                        <h5 class="event__header">
+                                            <a class="event__link" href="#">
+                                                Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                            </a>
+                                        </h5>
+                                        <p class="event__text">
+                                            Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                            по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                            персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                        </p>
+                                        <p class="event__link-more">
+                                            <a class="event__more" href="#">
+                                                Читать дальше
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </article>
+                                <article class="event clearfix">
+                                    <div class="event__wrap-left">
+                                        <img class="event__img" src="img/event-img.png" alt="">
+                                    </div>
+                                    <div class="event__wrap-right">
+                                        <h5 class="event__header">
+                                            <a class="event__link" href="#">
+                                                Большая тройка: Новые поступления в каталоге JH Audio - JH16v2 Pro, JH Ambient FR и JH 3X Pro
+                                            </a>
+                                        </h5>
+                                        <p class="event__text">
+                                            Американец Джеррри Харви, чьи инициалы образуют имя компании JH Audio - личность
+                                            по-настоящему легендарная. На его счету столько заслуг перед индустрией
+                                            персонального аудио, сколько не наберется ни у одного другого человека в мире!
+                                        </p>
+                                        <p class="event__link-more">
+                                            <a class="event__more" href="#">
+                                                Читать дальше
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="social-blocks col-md-3">
+                        <ul class="social-blocks__nav nav nav-tabs" role="tablist">
+                            <li class="social-blocks__item active" role="presentation">
+                                <a class="social-blocks__link" href="#vk" aria-controls="home" role="tab" data-toggle="tab">VK</a>
+                            </li>
+                            <li class="social-blocks__item"  role="presentation">
+                                <a class="social-blocks__link" href="#fb" aria-controls="profile" role="tab" data-toggle="tab">fb</a>
+                            </li>
+                        </ul>
+                        <div class="social-blocks__content tab-content">
+                            <div role="tabpanel" class="social-blocks__tab tab-pane active" id="vk">
+                                <div id="vk_groups"></div>
+                            </div>
+                            <div role="tabpanel" class="social-blocks__tab tab-pane" id="fb">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="260px" height="270px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="banners-section container">
+                <div class="banners-section__row row">
+                    <div class="banners-section__col col-md-12">
+                        <img class="banners-section__img" src="img/banner-section4.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="why-we container">
+                <h3 class="why-we__header">
+                    Почему мы?
+                </h3>
+                <div class="why-we__row row">
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                    <div class="why-we__col col-md-2 col-sm-4">
+                        <a class="why-we__link" href="#">
+                            <img class="why-we__img" src="img/features.png" alt=""></img>
+                            <p class="why-we__text">
+                                <span class="why-we__blue-text">Реальные магазины</span>
+                                где можно послушатьи подобрать наушники и аудио компоненты
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-tabs">
+                <ul class="main-tabs__nav nav nav-tabs container" role="tablist">
+                    <li role="presentation" class="main-tabs__item active">
+                        <a class="main-tabs__link" href="#brands" aria-controls="home" role="tab" data-toggle="tab">Все бренды</a>
+                    </li>
+                    <li role="presentation" class="main-tabs__item">
+                        <a class="main-tabs__link" href="#categories" aria-controls="profile" role="tab" data-toggle="tab">Категории товаров</a>
+                    </li>
+                </ul>
+                <div class="main-tabs__color-block">
+                    <div class="main-tabs__content tab-content container">
+                    <div role="tabpanel" class="main-tabs__pane tab-pane active" id="brands">
+                        <div class="brands-list">
+                            <div class="brands-list__row row">
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brands-list__col col-md-2 col-sm-4">
+                                    <h6 class="brands-list__header">a</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="brands-list__header">b</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Abyss Desig</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Acoustic Revive</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AcousticSheep</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">ADL</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AfterShokz</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">AKG</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Apple</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Arcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="main-tabs__pane tab-pane" id="categories">
+                        <div class="categories-main">
+                            <div class="categories-main__row row">
+                                <div class="categories-main__col col-sm-4">
+                                    <h6 class="brands-list__header">наушники</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Оптические и цифровые кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Межкомпонентные Аудио кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Микрофоны</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Удлинители, переходники и разъемы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Внешние аккумуляторы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Амбушюры и насадки</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Подставки для наушников</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Карты памяти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="categories-main__col col-sm-4">
+                                    <h6 class="brands-list__header">наушники</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Оптические и цифровые кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Межкомпонентные Аудио кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Микрофоны</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Удлинители, переходники и разъемы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Внешние аккумуляторы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Амбушюры и насадки</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Подставки для наушников</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Карты памяти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="categories-main__col col-sm-4">
+                                    <h6 class="brands-list__header">наушники</h6>
+                                    <ul class="brands-list__list">
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Оптические и цифровые кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Межкомпонентные Аудио кабели</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Микрофоны</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Удлинители, переходники и разъемы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Внешние аккумуляторы</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Амбушюры и насадки</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Подставки для наушников</a>
+                                        </li>
+                                        <li class="brands-list__item">
+                                            <a class="brands-list__link" href="#">Карты памяти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
         </main>
 
+        <footer class="footer container">
+            <div class="footer__list-section row">
+                <div class="footer__list col-md-3 col-sm-6">
+                    <img src="img/footer-list.png" alt="" class="footer__list-img">
+                    <ul class="footer__list-l">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Усилители для наушников</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники с микрофоном</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">mp3 плееры</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Звуковые карты и ЦАП</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Аксессуары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Популярные товары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list col-md-3 col-sm-6">
+                    <img src="img/footer-list.png" alt="" class="footer__list-img">
+                    <ul class="footer__list-l">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Усилители для наушников</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники с микрофоном</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">mp3 плееры</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Звуковые карты и ЦАП</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Аксессуары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Популярные товары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list col-md-3 col-sm-6">
+                    <img src="img/footer-list.png" alt="" class="footer__list-img">
+                    <ul class="footer__list-l">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Усилители для наушников</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники с микрофоном</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">mp3 плееры</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Звуковые карты и ЦАП</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Аксессуары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Популярные товары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list col-md-3 col-sm-6">
+                    <img src="img/footer-list.png" alt="" class="footer__list-img">
+                    <ul class="footer__list-l">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Усилители для наушников</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Наушники с микрофоном</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">mp3 плееры</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Звуковые карты и ЦАП</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Аксессуары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Популярные товары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom-section row">
+                <div class="logo logo--margin col-md-3">
+                    <div class="logo__wrap">
+                        <a class="logo__link" href="#">
+                            <img class="logo__image" src="img/logo-dark.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="phones col-md-6">
+                    <div> © 2006 - 2016 Магазин персонального аудио «Doctorhead»&nbsp;</div>
+                    <p class="footer__fix-padding">Телефон: 8 (495) 646 61 55, 8 (812) 490 76 67;</p>
+                    <a href="mailto:info@doctorhead.ru">info@doctorhead.ru</a>
+                </div>
+                <div class="socials col-md-3">
+                    <div>Мы в соцсетях:</div>
+                    <a class="user-action__icon-social user-action__icon-social--fb" title="Facebook"      href="#"></a>
+                    <a class="user-action__icon-social user-action__icon-social--tw" title="Twitter"       href="#"></a>
+                    <a class="user-action__icon-social user-action__icon-social--vk" title="ВКонтакте"     href="#"></a>
+                    <a class="user-action__icon-social user-action__icon-social--gg" title="Google"        href="#"></a>
+                    <a class="user-action__icon-social user-action__icon-social--ya" title="Яндекс"        href="#"></a>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="http://bootstrap-ru.com/204/assets/js/bootstrap-tab.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

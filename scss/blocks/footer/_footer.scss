@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 30px;
+
+  &__list {
+    text-align: left;
+  }
+
+  &__list-img {
+    margin-bottom: 10px;
+  }
+
+  &__list-l {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  &__link {
+    display: block;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #3dbcd4;
+    text-decoration: none;
+    font-family: Arial;
+    line-height: 135%;
+    font-size: 12px;
+
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+
+  &__bottom-section {
+    padding-top: 20px;
+  }
+
+  &__fix-padding {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

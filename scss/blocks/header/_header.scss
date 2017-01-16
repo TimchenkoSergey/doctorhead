@@ -1,4 +1,5 @@
 .header {
+
   &__top {
     padding-top: 20px;
   }
@@ -6,4 +7,11 @@
   &__bottom {
     padding-top: 15px;
   }
+
+  &__wrap {
+    @media (max-width: 1201px) {
+      width: 100%;
+    }
+  }
+
 }

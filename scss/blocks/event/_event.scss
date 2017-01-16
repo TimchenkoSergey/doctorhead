@@ -1,0 +1,57 @@
+.event {
+  &__more .glyphicon {
+    top: 2px;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  &__wrap-left {
+    float: left;
+    width: 80px;
+  }
+
+  &__wrap-right {
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 90px);
+  }
+  
+  &__link {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3dbcd4;
+  }
+
+  &__text {
+    display: block;
+    line-height: 180%;
+    overflow: hidden;
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+
+  &__more {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+      color: #999;
+    }
+  }
+}

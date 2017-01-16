@@ -1,3 +1,107 @@
 .banner {
 
+  &__inform-left {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10%;
+  }
+
+  &__inform-right {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__link {
+    color: #00a1de;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 130%;
+  }
+
+  &__product-price {
+    font-family: PlumbBold;
+    font-size: 25px;
+    color: #000000;
+  }
+
+  &__rait {
+    font-family: PlumbBold;
+    font-size: 18px;
+    margin-right: 15px;
+    padding-left: 25px;
+    color: #000000;
+    float: left;
+
+
+    &--stars {
+      background: url("../img/star.png") no-repeat 0 2px;
+    }
+
+    &--favorites {
+      background: url("../img/raiting-img.png") no-repeat 0 2px;
+    }
+  }
+
+  &__product-description {
+    font-family: Arial;
+    line-height: 166%;
+    margin-bottom: 14px;
+    margin-top: 7px;
+    padding-left: 4px;
+    padding-right: 10px;
+    color: #000000;
+  }
+
+  &__button {
+    display: block;
+    height: 27px;
+    width: 28px;
+    background-color: #00a1de;
+    border-radius: 50%;
+    
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  &__action-wrap {
+    float: left;
+    margin-right: 15px;
+  }
+
+  &__button--padding {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  &__icon {
+    display: block;
+    height: 27px;
+    width: 28px;
+    cursor: pointer;
+
+    &--favorite {
+      background: url("../img/favorites.png") no-repeat center 5px;
+    }
+
+    &--compare {
+      background: url("../img/compare.png") no-repeat center 5px;
+    }
+
+    &--cart {
+      background: url("../img/basket-white.png");
+      height: 17px;
+      width: 18px;
+    }
+  }
+
+  &__rait--white {
+    color: #ffffff;
+  }
 }

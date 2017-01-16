@@ -1,0 +1,28 @@
+.brands-list {
+
+  &__header {
+    font-family: 'PlumbBold';
+    color: #8c8c8c;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
