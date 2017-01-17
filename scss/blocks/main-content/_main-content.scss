@@ -3,4 +3,14 @@
     position: relative;
     z-index: 5;
   }
+
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

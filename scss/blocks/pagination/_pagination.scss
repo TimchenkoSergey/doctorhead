@@ -1,0 +1,57 @@
+.pagination {
+  padding-left: 0;
+  padding-right: 0;
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    float: left;
+  }
+
+  &__item {
+    float: left;
+    color: #3dbcd4;
+    font-size: 14px;
+    font-family: 'PlumbBold';
+    height: 22px;
+    line-height: 20px;
+    width: 24px;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #3dbcd4;
+    font-size: 14px;
+    font-family: 'PlumbBold';
+    height: 22px;
+    line-height: 20px;
+    width: 24px;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    &--active {
+      color: #000000;
+    }
+  }
+
+  &__next {
+    float: left;
+    margin-left: 20px;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    width: 23px;
+    height: 23px;
+    background: url("../img/arrow-for-slider.png") no-repeat 0 -23px;
+
+    &:hover {
+      background-position: -23px -23px;
+    }
+  }
+}

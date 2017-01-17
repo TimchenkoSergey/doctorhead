@@ -140,6 +140,26 @@ $(function () {
     })();
 
     (function () {
-        VK.Widgets.Group("vk_groups", {mode: 0, width: "260"}, 127991612);
+        if ($("#vk_groups").length > 0) {
+            VK.Widgets.Group("vk_groups", {mode: 0, width: "260"}, 127991612);
+        }
+    })();
+
+    (function () {
+        $(".product-item__minus-but").on("click", function (e) {
+            e.preventDefault();
+
+            var val = $(this).siblings("input").val();
+            if (val > 1) {
+                $(this).siblings("input").val(--val);
+            }
+        });
+
+        $(".product-item__plus-but").on("click", function (e) {
+            e.preventDefault();
+
+            var val = $(this).siblings("input").val();
+            $(this).siblings("input").val(++val);
+        });
     })();
 });

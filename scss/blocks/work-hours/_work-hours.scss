@@ -33,6 +33,10 @@
     font-size: 20px;
     padding-top: 18px;
     padding-right: 10px;
+
+    &--black {
+      color: #000000;
+    }
   }
 
   &__wrap {
@@ -49,6 +53,10 @@
     &--small {
       font-size: 10px;
       text-transform: uppercase;
+    }
+
+    &--black {
+      color: #000000;
     }
   }
 

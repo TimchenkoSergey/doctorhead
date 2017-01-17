@@ -22,6 +22,10 @@
     font-size: 20px;
     padding-top: 22px;
     padding-right: 10px;
+
+    &--black {
+      color: #000000;
+    }
   }
 
   &__wrap {
@@ -33,6 +37,10 @@
     font-size: 20px;
     font-family: PlumbBold;
     text-align: right;
+
+    &--black {
+      color: #000000;
+    }
   }
 
   &__call-back-link {

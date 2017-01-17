@@ -26,6 +26,14 @@
     &:hover {
       background-position: -23px 0;
     }
+
+    @media (max-width: 990px) {
+      top: 160px;
+    }
+
+    @media (max-width: 767px) {
+      top: 40px;
+    }
   }
 
   &__next-arrow {
@@ -39,11 +47,27 @@
     &:hover {
       background-position: -23px -23px;
     }
+
+    @media (max-width: 990px) {
+      top: 160px;
+    }
+
+    @media (max-width: 767px) {
+      top: 40px;
+    }
   }
 
   &__pagination-wrap {
     padding-top: 343px;
     float: right;
+
+    @media (max-width: 990px) {
+      padding-top: 230px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+    }
   }
 
   &__pagination-item {

@@ -1,9 +1,40 @@
 .banners-section {
   margin-top: 30px;
+  position: relative;
+  z-index: 2;
+  padding-left: 0;
+  padding-right: 0;
+
+  &--small-margin {
+    margin-top: 10px;
+  }
 
   &__img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+  }
+
+  &__col-two {
+    position: relative;
+  }
+
+  &__text {
+    text-align: left;
+    color: #fff;
+    background: #3DBCD4;
+    height: 25px;
+    width: 100%;
+    padding: 5px 0 5px 15px;
+    margin: -15px 0 0 0;
+    border-radius: 0 0 5px 5px;
+    font-family: arial, sans-serif;
+  }
+
+  &__link {
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
 }
