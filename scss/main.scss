@@ -37,6 +37,12 @@
   opacity: 0.4 !important;
 }
 
+.row {
+  @media (max-width: 1050px) {
+    margin-left:  0 !important;
+    margin-right: 0 !important;
+  }
+}
 
 //imports modules
 @import "blocks/page/_page.scss";
@@ -66,3 +72,5 @@
 @import "blocks/pagination/_pagination.scss";
 @import "blocks/category/_category.scss";
 @import "blocks/aside-banner/_aside-banner.scss";
+@import "blocks/accessories/_accessories.scss";
+@import "blocks/recommended/_recommended.scss";

@@ -3,11 +3,15 @@
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 
+  &__container {
+    position: relative;
+  }
+
   @media only screen and (max-width: 1201px) {
     width: 100%;
   }
 
-  @media only screen and (max-width: 945px) {
+  @media only screen and (max-width: 990px) {
     text-align: center;
   }
 
@@ -15,7 +19,7 @@
     width: 80%;
     float: left;
 
-    @media only screen and (max-width: 945px) {
+    @media only screen and (max-width: 990px) {
       width: 100%;
       float: none;
     }
@@ -25,7 +29,7 @@
     width: 20%;
     float: left;
 
-    @media only screen and (max-width: 945px) {
+    @media only screen and (max-width: 990px) {
       width: 100%;
       float: none;
     }

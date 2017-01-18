@@ -162,4 +162,41 @@ $(function () {
             $(this).siblings("input").val(++val);
         });
     })();
+
+    (function () {
+        if ($(".category__table-view").length > 0) {
+            var rows               = $(".product-item--table");
+            var TOP_PADDING        = 16;
+            var MIN_HEIGHT_ON_MOBI = 70;
+
+            $.each(rows, function (i, v) {
+                if (i > 0) {
+                    var nameHeight = $(v).find(".product-item__name--fl").height() + TOP_PADDING;
+
+                    if ($(window).width() <= 800) {
+                        nameHeight = (nameHeight > MIN_HEIGHT_ON_MOBI) ? nameHeight : MIN_HEIGHT_ON_MOBI;
+                    }
+
+                    if ($(window).width() <= 400) {
+                        nameHeight += TOP_PADDING ;
+                    }
+
+                    $.each($(v).children(), function (i, v) {
+                        if (i > 0) {
+                            $(v).css("height", nameHeight + "px");
+                        }
+                        else {
+                            $(v).children(".product-item__name").css("height", nameHeight + "px");
+                        }
+                    });
+                }
+            });
+        }
+    })();
+
+    (function () {
+        $(".small-carousel").owlCarousel({
+            items: 8
+        });
+    })();
 });

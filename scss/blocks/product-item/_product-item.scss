@@ -13,6 +13,24 @@
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-bottom: 5px;
+
+    @media (max-width: 770px) {
+      width: 32%;
+      margin-left: 0.65%;
+      margin-right: 0.65%;
+    }
+
+    @media (max-width: 570px) {
+      width: 45%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+    }
+
+    @media (max-width: 450px) {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 
   &:hover &__wrap {
@@ -131,11 +149,21 @@
   &__picture--list {
     float: left;
     max-width: 182px;
+
+    @media (max-width: 800px) {
+      float: none;
+      margin: 0 auto;
+    }
   }
 
   &__list-wrap {
     float: left;
     padding-left: 20px;
+
+    @media (max-width: 800px) {
+      float: none;
+      padding-left: 0;
+    }
   }
 
   &__price-text {
@@ -187,6 +215,11 @@
 
   &__moves--list {
     padding-top: 70px;
+
+    @media (max-width: 800px) {
+      padding: 5px;
+      padding-bottom: 10px;
+    }
   }
 
   &--margin {
@@ -195,12 +228,15 @@
 
   //table layout styles
 
+
+
+
+
   &--table {
     margin-bottom: 5px;
   }
 
   &__article {
-    height: 30px;
     float: left;
     border-right: 1px solid #d4d5da;
     margin-bottom: 0;
@@ -209,6 +245,17 @@
     font-family: PlumbBold;
     text-transform: uppercase;
     padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 20%;
+      padding-left: 0;
+    }
   }
 
   &__name--fl {
@@ -216,24 +263,35 @@
     margin-top: 0;
     margin-bottom: 0;
     border-right: 1px solid #d4d5da;
-    height: 30px;
     width: 30%;
     padding-top: 8px;
     padding-left: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding-bottom: 8px;
     text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 25%;
+      padding-left: 0;
+    }
   }
 
   &__product-status {
     float: left;
     border-right: 1px solid #d4d5da;
-    height: 30px;
     margin-bottom: 0;
     width: 10%;
     text-align: center;
     padding-top: 6px;
+
+    @media (max-width: 480px) {
+      width: 15%;
+      padding-left: 0;
+    }
   }
 
   &__price--table {
@@ -241,10 +299,20 @@
     margin-top: 0;
     margin-bottom: 0;
     border-right: 1px solid #d4d5da;
-    height: 30px;
     width: 20%;
     padding-top: 4px;
+    padding-bottom: 4px;
     text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 10%;
+      padding-left: 0;
+    }
   }
 
   &__count-form {
@@ -252,19 +320,29 @@
     margin-top: 0;
     margin-bottom: 0;
     border-right: 1px solid #d4d5da;
-    height: 30px;
     width: 15%;
     padding-top: 4px;
+    padding-bottom: 4px;
     text-align: center;
+
+    @media (max-width: 480px) {
+      width: 15%;
+      padding-left: 0;
+    }
   }
 
   &__cart-link {
     float: left;
     display: block;
-    height: 30px;
     width: 10%;
     text-align: center;
     padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (max-width: 480px) {
+      width: 15%;
+      padding-left: 0;
+    }
   }
   
   &__minus-but {
@@ -272,6 +350,11 @@
     border: none;
     text-shadow: none;
     background-color: #fff;
+
+    @media (max-width: 800px) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__plus-but {
@@ -279,6 +362,11 @@
     border: none;
     text-shadow: none;
     background-color: #fff;
+
+    @media (max-width: 800px) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__input {
@@ -286,41 +374,134 @@
     box-shadow: none;
     padding-left: 5px;
     border: 1px solid #d4d5da;
+
+    @media (max-width: 600px) {
+      width: 40px;
+    }
   }
 
   &__price--table-n {
     width: 30%;
     font-size: 12px;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 25%;
+    }
   }
 
   &__price--table-a {
     font-size: 12px;
     width: 15%;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 20%;
+    }
   }
 
   &__price--table-nal {
     font-size: 12px;
     width: 10%;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 15%;
+    }
   }
 
   &__price--table-p {
     font-size: 12px;
     width: 20%;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 10%;
+    }
   }
 
   &__price--table-c {
     font-size: 12px;
     width: 15%;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 15%;
+    }
   }
 
   &__price--table-b {
     font-size: 12px;
     width: 10%;
     padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      text-transform: none;
+    }
+
+    @media (max-width: 480px) {
+      width: 15%;
+    }
+  }
+
+  &__cart-icon {
+    display: none;
+
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  &__cart-text {
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }

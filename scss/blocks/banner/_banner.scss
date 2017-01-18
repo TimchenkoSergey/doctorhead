@@ -108,4 +108,10 @@
   &__button--fl {
     float: left;
   }
+
+  &__action-wrap--pb {
+    @media (max-width: 550px) {
+      margin-bottom: 10px;
+    }
+  }
 }
