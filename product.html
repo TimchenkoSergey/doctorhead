@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="libs/owl/owl.carousel.css">
     <link rel="stylesheet" href="libs/owl/owl.transitions.css">
     <link rel="stylesheet" href="libs/owl/owl.theme.css">
+    <link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
     <link rel="stylesheet" href="scss/main.min.css">
+    <link rel="stylesheet" href="libs/raiting/bootstrap-rating.css">
+    <script src="libs/jquery/jquery.min.js"></script>
     <script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
 </head>
 <body class="page">
 <div class="page__wrap">
 
+    <div class="top-navigation-pane__block"></div>
     <div class="top-navigation-panel">
         <div class="top-navigation-panel__container container">
             <div class="top-navigation__row row clearfix">
@@ -579,332 +583,574 @@
             </span>
         </div>
 
-        <section class="accessories container">
-            <h3 class="accessories__header">АКСЕССУАРЫ РЕКОМЕНДУЕМЫЕ ДЛЯ RHA MA600:</h3>
-            <div class="accessories__wrap small-carousel">
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
+        <section class="product container">
+            <div class="product__row row clearfix">
+                <div class="product__col col-md-6">
+                    <div class="product-slider">
+                        <ul class="product-slider__bxslider bxslider">
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm1.jpg"/>
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm2.jpg" />
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm3.jpg" />
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm1.jpg"/>
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm2.jpg" />
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm3.jpg" />
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm1.jpg"/>
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm2.jpg" />
+                            </li>
+                            <li class="product-slider__nav-item">
+                                <img class="product-slider__img-sm" src="img/slider-sm3.jpg" />
+                            </li>
+                        </ul>
+                        <div class="product-slider__img-wrap" id="bx-pager">
+                            <a class="product-slider__link item" data-slide-index="0" href="#">
+                                <img class="product-slider__img" src="img/slider-sm1.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="1" href="#">
+                                <img class="product-slider__img" src="img/slider-sm2.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="2" href="#">
+                                <img class="product-slider__img" src="img/slider-sm3.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="0" href="#">
+                                <img class="product-slider__img" src="img/slider-sm1.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="1" href="#">
+                                <img class="product-slider__img" src="img/slider-sm2.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="2" href="#">
+                                <img class="product-slider__img" src="img/slider-sm3.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="0" href="#">
+                                <img class="product-slider__img" src="img/slider-sm1.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="1" href="#">
+                                <img class="product-slider__img" src="img/slider-sm2.jpg" />
+                            </a>
+                            <a class="product-slider__link item" data-slide-index="2" href="#">
+                                <img class="product-slider__img" src="img/slider-sm3.jpg" />
+                            </a>
+                        </div>
+                        <div class="discount">
+                            -20%
+                        </div>
+                        <div class="rating">
+                            <input type="hidden" class="rating__input" disabled="disabled" value="4.6" data-fractions="5"/>
+                        </div>
                     </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
                 </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                <div class="product__col col-md-6">
+                    <h1 class="product__name">Name of product</h1>
+                    <p class="product__price">
+                        <span class="product__price-old">91234</span>
+                        <span class="product__price-discount">81324</span>
                     </p>
-                    <p class="accessories__price">3 290 .–</p>
+                    <div class="product__status">
+                        <span class="product__status-text">ТОВАР в НАЛИЧИИ В ИНТЕРНЕТ-МАГАЗИНЕ</span>
+                        <span class="product-item__available-icon glyphicon glyphicon-ok"  data-toggle="tooltip" data-placement="right" title="Товар доступен"></span>
+                        <!--<span class="product-item__not-available-icon glyphicon glyphicon-remove"  data-toggle="tooltip" data-placement="right" title="Товар не доступен"></span>-->
+                    </div>
+                    <div class="product__button">
+                        <button class="product__cart">В корзину</button>
+                    </div>
+                    <div class="product__danger">
+                        18+
+                    </div>
+                    <div class="fast-order">
+                        <span class="fast-order__numbers">+38</span>
+                        <input type="text"   value=""                class="fast-order__phone"  id="fast-order-phone" placeholder="Ваш номер телефона...">
+                        <input type="button" value="Купить в 1 клик" class="fast-order__button" id="fast-order-but" >
+                        <script>
+                            $(document).ready(function(){
+                                var phoneElement = $("#fast-order-phone");
+
+                                $("#fast-order-but").on("click", function() {
+                                    console.log(phoneElement.val());
+                                    if (phoneElement.val() == ""){
+                                        phoneElement.css("border-color", "red");
+                                    }
+                                    else {
+                                        $("#fast-order-success").modal("show");
+                                        //send ajax
+                                    }
+                                });
+
+                                phoneElement.on("focus", function () {
+                                    phoneElement.css("border-color", "#DFE1E2");
+                                });
+
+                                phoneElement.mask("(999) 999-99-99");
+                            });
+                        </script>
+                    </div>
+                    <div class="stickers">
+                        <img class="stickers__img" src="img/icon.png" alt="">
+                        <img class="stickers__img" src="img/icon.png" alt="">
+                        <img class="stickers__img" src="img/icon.png" alt="">
+                        <img class="stickers__img" src="img/icon.png" alt="">
+                        <img class="stickers__img" src="img/icon.png" alt="">
+                    </div>
                 </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
+            </div>
+            <div class="product__row row">
+                <div class="product__col col-md-6">
+                    <section class="accessories">
+                        <h3 class="accessories__header">АКСЕССУАРЫ РЕКОМЕНДУЕМЫЕ ДЛЯ RHA MA600:</h3>
+                        <div class="accessories__wrap small-4-carousel">
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="accessories__picture">
+                                    <img class="accessories__img" src="img/acs.jpg" alt="">
+                                </div>
+                                <p class="accessories__name">
+                                    <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
+                                </p>
+                                <p class="accessories__price">3 290 .–</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
-                </div>
-                <div class="accessories__item item">
-                    <div class="accessories__picture">
-                        <img class="accessories__img" src="img/acs.jpg" alt="">
-                    </div>
-                    <p class="accessories__name">
-                        <a class="accessories__link" href="#">PHILIPS SWA3030S/10</a>
-                    </p>
-                    <p class="accessories__price">3 290 .–</p>
+                <div class="product__col col-md-6">
+                    <section class="main-tabs main-tabs--padding">
+                        <ul class="main-tabs__nav nav nav-tabs" role="tablist">
+                            <li role="presentation" class="main-tabs__item active">
+                                <a class="main-tabs__link" href="#specifications" aria-controls="home" role="tab" data-toggle="tab">Характеристики</a>
+                            </li>
+                            <li role="presentation" class="main-tabs__item">
+                                <a class="main-tabs__link" href="#description" aria-controls="profile" role="tab" data-toggle="tab">Описание</a>
+                            </li>
+                            <li role="presentation" class="main-tabs__item">
+                                <a class="main-tabs__link" href="#questions " aria-controls="profile" role="tab" data-toggle="tab">Вопросы</a>
+                            </li>
+                        </ul>
+                        <div class="main-tabs__color-block">
+                            <div class="main-tabs__content tab-content ">
+                                <div role="tabpanel" class="main-tabs__pane tab-pane active" id="specifications">
+                                    <table class="specifications table table-striped table-bordered">
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Тип звукоизлучателя</td>
+                                            <td class="specifications__col">Арматурный</td>
+                                        </tr>
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Прилегание к ушам</td>
+                                            <td class="specifications__col">Вставные</td>
+                                        </tr>
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Тип наушниковя</td>
+                                            <td class="specifications__col">Закрытые</td>
+                                        </tr>
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Съемный кабель</td>
+                                            <td class="specifications__col">нет</td>
+                                        </tr>
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Основной Цвет</td>
+                                            <td class="specifications__col">Чёрный</td>
+                                        </tr>
+                                        <tr class="specifications__row">
+                                            <td class="specifications__col">Материал амбушюря</td>
+                                            <td class="specifications__col">Силикон</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="main-tabs__pane tab-pane" id="description">
+                                    <div class="description">
+                                        <h3 class="description__header">Легчайший корпус. Тяжелый звук.</h3>
+                                        <p class="description__text">
+                                            Наушники-вкладыши Klipsch X12i являются одними из самых легких, самых
+                                            удобных наушников на планете. Изготовленные из высококачественных
+                                            материалов и использующие превосходные акустические технологии,
+                                            эти наушники исчезают, когда вы надеваете их, оставляя вам только
+                                            настоящий, живой звук фильмов и музыки.
+                                        </p>
+                                        <div class="description__picture">
+                                            <img class="description__img" src="img/product-big.jpg" alt="">
+                                        </div>
+                                        <ul class="description__list">
+                                            <li class="description__items">1 арматурный драйвер</li>
+                                            <li class="description__items">Эргономичная форма</li>
+                                            <li class="description__items">Маленький вес</li>
+                                            <li class="description__items">Маленький вес</li>
+                                            <li class="description__items">Удобная посадка благодаря овальной запатентованной форме амбушюр</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="main-tabs__pane tab-pane" id="questions">
+                                    <div class="questions">
+                                        <form class="questions__form">
+                                            <div class="questions__title">Задать вопрос</div>
+                                            <div class="questions__fields">
+                                                <input class="questions__input" type="text"  placeholder="Имя"        name="name">
+                                                <input class="questions__input" type="email" placeholder="E-mail"     name="email">
+                                                <input class="questions__input" type="from"  placeholder="Откуда вы?" name="from">
+
+                                                <textarea class="questions__textarea" placeholder="Текст" name="question"></textarea>
+                                                <button  class="questions__submit" type="submit">Отправить</button>
+                                            </div>
+                                        </form>
+
+                                        <div class="questions__list">
+                                            <div class="questions__wrap">
+                                                <div class="questions__question">
+                                                    <p class="questions__par">Добрый день</p>
+                                                    <p class="questions__par">
+                                                        Моим SENNHEISER IE 4 через две недели исполнится три года. Недавно,
+                                                        я заметил, что у них пропало воспроизведение низких частот. Наушники э
+                                                        кплуатировались крайне осторожно, об этом свидетельствует их визуальное
+                                                        состояние, однако они всегда были со мной и мороз, и жару.
+                                                    </p>
+                                                    <p class="questions__par">Что бы вы могли посоветовать в ремонте?</p>
+                                                    <p class="questions__par">С уважением,</p>
+                                                    <p class="questions__par">Роман</p>
+                                                </div>
+                                                <p class="questions__answer">
+                                                    Ответ от
+                                                    <span class="questions__bold">Doctorhead.ru: </span>
+                                                    Добрый день! По этому вопросу рекомендуем
+                                                    вам обратиться в наш сервисный центр по адресу service@doctorhead.ru.
+                                                    Наши опытные специалисты обязательно вам помогут.
+                                                </p>
+                                            </div>
+                                            <div class="questions__account">
+                                                <span class="questions__triangle glyphicon glyphicon-triangle-bottom"></span>
+                                                <span class="glyphicon glyphicon-user"></span>
+                                                <span class="questions__author">Вася</span>
+                                                <span class="questions__date">18.05.2016</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -2149,12 +2395,23 @@
             </div>
         </div>
     </footer>
+
+    <div id="fast-order-success" class="fast-order__modal-wrap modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="fast-order__modal-dialog modal-dialog" role="document">
+            <div class="fast-order__modal-content modal-content">
+                <h4 class="fast-order__header">Спасибо за покупку!</h4>
+                <p class="fast-order__text">Наш менеджер свяжется с Вами в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<script src="libs/jquery/jquery.min.js"></script>
 <script src="http://bootstrap-ru.com/204/assets/js/bootstrap-tab.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+<script src="libs/raiting/bootstrap-rating.min.js"></script>
+<script src="libs/masked-input/jquery.maskedinput.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -133,6 +133,15 @@ $(function () {
     //main page carousel (tabs section)
     (function () {
         $(".main-carousel").owlCarousel();
+        $(".product-slider__img-wrap").owlCarousel({
+            items: 4,
+            navigation: true,
+            pagination: false,
+            navigationText: ["<span class='glyphicon glyphicon-menu-left'  aria-hidden='true'></span>",
+                             "<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"]
+
+        });
+
     })();
 
     (function () {
@@ -198,5 +207,43 @@ $(function () {
         $(".small-carousel").owlCarousel({
             items: 8
         });
+
+        $(".small-4-carousel").owlCarousel({
+            items: 4
+        });
+
+        if ($('.bxslider').length > 0) {
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager'
+            });
+
+        }
     })();
+
+    (function () {
+        var navigation        = $(".top-navigation-panel"),
+            block             = $(".top-navigation-pane__block"),
+            NAVIGATION_HEIGHT = 31;
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 0){
+                navigation.css("position", "fixed");
+                navigation.css("z-index", "5");
+                block.css("height", NAVIGATION_HEIGHT + "px");
+            }
+            else {
+                navigation.css("position", "relative");
+                block.css("height", "0");
+            }
+        });
+    })();
+
+    (function () {
+        $(".rating__input").rating({
+            filled: 'glyphicon glyphicon-star blue',
+            empty: 'glyphicon glyphicon-star white'
+        });
+    })();
+
+
 });

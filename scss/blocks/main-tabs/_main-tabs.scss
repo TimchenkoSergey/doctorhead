@@ -1,6 +1,10 @@
 .main-tabs {
   padding-top: 30px;
 
+  &--padding {
+    padding-top: 20px;
+  }
+
   &__nav {
     border: none;
   }
