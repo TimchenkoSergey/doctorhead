@@ -248,4 +248,19 @@ $(function () {
             });
         }
     })();
+
+    //remove element in cart (cart popup)
+    (function () {
+        if ($(window).width() < 990) {
+            $(".product__cart").removeAttr("data-toggle");
+            $(".product__cart").removeAttr("data-target");
+        }
+
+
+        $(document).on("click", ".buy-popup__remove-button", function () {
+            var parentItemNode = $(this).closest(".buy-popup__item");
+            $(document).trigger("price-change");//event triggered when we must change price
+            parentItemNode.remove();
+        });
+    })();
 });
