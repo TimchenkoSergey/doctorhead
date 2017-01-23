@@ -54,10 +54,16 @@
 
   &__input-icon {
     position: absolute;
-    top: 4.5px;
-    right: 4px;
+    padding: 0;
+    top: 6.5px;
+    right: 7px;
     background: none;
     border: none;
+    font-size: 14px;
+    
+    &:hover {
+      background: transparent;
+    }
 
     @media (max-width: 350px) {
       right: 10px;

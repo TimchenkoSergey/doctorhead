@@ -12,6 +12,11 @@
     list-style: none;
   }
 
+  &__item {
+    background: none !important;
+    padding-left: 0;
+  }
+
   &__link {
     font-size: 12px;
     text-decoration: none;

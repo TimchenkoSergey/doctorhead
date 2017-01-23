@@ -55,117 +55,120 @@
 <body class="page">
     <div class="page__wrap">
 
-        <div class="top-navigation-panel container">
-            <div class="top-navigation__row row clearfix">
-                <div class="top-navigation-panel__navigation">
+        <div class="top-navigation-pane__block"></div>
+        <div class="top-navigation-panel">
+            <div class="top-navigation-panel__container container">
+                <div class="top-navigation__row row clearfix">
+                    <div class="top-navigation-panel__navigation">
 
-                    <nav class="navigation">
-                        <ul class="navigation__list clearfix">
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">О компании</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Магазины</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Новости</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Обзоры</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Статьи</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Форум</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Сервис</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Доставка и Оплата</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Советы</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <nav class="navigation">
+                            <ul class="navigation__list clearfix">
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">О компании</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Магазины</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Новости</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Обзоры</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Статьи</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Форум</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Сервис</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Доставка и Оплата</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Советы</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
 
-                </div>
-                <div class="top-navigation-panel__user-action clearfix">
-                    <div class="user-action">
-                        <div class="user-action__item">
-                            <a class="user-action__link" href="/#">
-                                <div class="user-action__icon user-action__icon--basket"></div>
+                    </div>
+                    <div class="top-navigation-panel__user-action clearfix">
+                        <div class="user-action">
+                            <div class="user-action__item">
+                                <a class="user-action__link" href="/#">
+                                    <div class="user-action__icon user-action__icon--basket"></div>
+                                    <div class="user-action__count">
+                                        <span class="user-action__number">0</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="user-action__item">
+                                <div class="user-action__icon user-action__icon--favorites"></div>
                                 <div class="user-action__count">
                                     <span class="user-action__number">0</span>
                                 </div>
-                            </a>
-                        </div>
-
-                        <div class="user-action__item">
-                            <div class="user-action__icon user-action__icon--favorites"></div>
-                            <div class="user-action__count">
-                                <span class="user-action__number">0</span>
                             </div>
-                        </div>
 
-                        <div class="user-action__item">
-                            <div class="user-action__icon user-action__icon--compare"></div>
-                            <div class="user-action__count">
-                                <span class="user-action__number">0</span>
+                            <div class="user-action__item">
+                                <div class="user-action__icon user-action__icon--compare"></div>
+                                <div class="user-action__count">
+                                    <span class="user-action__number">0</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="user-action__item user-action__item--login">
-                            <div class="user-action__icon user-action__icon--user"></div>
-                            <div class="user-action__come-in">Войти</div>
-                            <div class="user-action__login-popup">
-                                <div class="user-action__popup-wrap">
-                                    <div class="user-action__auth">
-                                        <form class="user-action__form">
-                                            <div class="user-action__form-top">
-                                                <h3 class="user-action__popup-head">Войти</h3>
-                                                <div>
-                                                    <div class="user-action__row">
-                                                        <input class="user-action__input" type="text">
-                                                    </div>
-                                                    <div class="user-action__row">
-                                                        <input class="user-action__input" type="text">
-                                                    </div>
-                                                    <input class="user-action__checkbox" id="remember-user" type="checkbox">
-                                                    <label class="user-action__label" for="remember-user" title="Запомнить меня на этом компьютере">
-                                                        Запомнить меня
-                                                    </label>
-                                                    <div class="user-action__new-line clearfix">
-                                                        <div class="user-action__wrapper">
-                                                            <button class="user-action__button-come-in" type="submit" value="Войти">
-                                                                Войти
-                                                                <span class="user-action__arrow glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-                                                            </button>
+                            <div class="user-action__item user-action__item--login">
+                                <div class="user-action__icon user-action__icon--user"></div>
+                                <div class="user-action__come-in">Войти</div>
+                                <div class="user-action__login-popup">
+                                    <div class="user-action__popup-wrap">
+                                        <div class="user-action__auth">
+                                            <form class="user-action__form">
+                                                <div class="user-action__form-top">
+                                                    <h3 class="user-action__popup-head">Войти</h3>
+                                                    <div>
+                                                        <div class="user-action__row">
+                                                            <input class="user-action__input" type="text">
                                                         </div>
-                                                        <div class="user-action__wrapper">
-                                                            <a href="#" class="user-action__link user-action__link--white">Забыли пароль?</a>
-                                                            <a href="#" class="user-action__link user-action__link--white">Регистрация</a>
+                                                        <div class="user-action__row">
+                                                            <input class="user-action__input" type="text">
+                                                        </div>
+                                                        <input class="user-action__checkbox" id="remember-user" type="checkbox">
+                                                        <label class="user-action__label" for="remember-user" title="Запомнить меня на этом компьютере">
+                                                            Запомнить меня
+                                                        </label>
+                                                        <div class="user-action__new-line clearfix">
+                                                            <div class="user-action__wrapper">
+                                                                <button class="user-action__button-come-in" type="submit" value="Войти">
+                                                                    Войти
+                                                                    <span class="user-action__arrow glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="user-action__wrapper">
+                                                                <a href="#" class="user-action__link user-action__link--white">Забыли пароль?</a>
+                                                                <a href="#" class="user-action__link user-action__link--white">Регистрация</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="user-action__form-bottom">
-                                    <div class="user-action__popup-head">Войти как пользователь:</div>
-                                    <div class="user-action__social clearfix">
-                                        <a class="user-action__icon-social user-action__icon-social--fb" title="Facebook"      href="#"></a>
-                                        <a class="user-action__icon-social user-action__icon-social--tw" title="Twitter"       href="#"></a>
-                                        <a class="user-action__icon-social user-action__icon-social--vk" title="ВКонтакте"     href="#"></a>
-                                        <a class="user-action__icon-social user-action__icon-social--gg" title="Google"        href="#"></a>
-                                        <a class="user-action__icon-social user-action__icon-social--ya" title="Яндекс"        href="#"></a>
-                                        <a class="user-action__icon-social user-action__icon-social--ok" title="Одноклассники" href="#"></a>
+                                    <div class="user-action__form-bottom">
+                                        <div class="user-action__popup-head">Войти как пользователь:</div>
+                                        <div class="user-action__social clearfix">
+                                            <a class="user-action__icon-social user-action__icon-social--fb" title="Facebook"      href="#"></a>
+                                            <a class="user-action__icon-social user-action__icon-social--tw" title="Twitter"       href="#"></a>
+                                            <a class="user-action__icon-social user-action__icon-social--vk" title="ВКонтакте"     href="#"></a>
+                                            <a class="user-action__icon-social user-action__icon-social--gg" title="Google"        href="#"></a>
+                                            <a class="user-action__icon-social user-action__icon-social--ya" title="Яндекс"        href="#"></a>
+                                            <a class="user-action__icon-social user-action__icon-social--ok" title="Одноклассники" href="#"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,6 +177,7 @@
                 </div>
             </div>
         </div>
+
 
         <main class="main-content">
             <div class="slider-main">

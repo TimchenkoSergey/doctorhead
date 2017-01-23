@@ -99,7 +99,13 @@
   color: #3dbcd4;
 }
 
+.owl-carousel .owl-wrapper-outer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 //imports modules
+@import "basic";
 @import "blocks/page/_page.scss";
 @import "blocks/top-navigation-panel/_top-navigation-panel.scss";
 @import "blocks/navigation/_navigation.scss";
@@ -138,3 +144,4 @@
 @import "blocks/specifications/_specifications.scss";
 @import "blocks/description/_description.scss";
 @import "blocks/questions/_questions.scss";
+@import "blocks/buy-popup/_buy-popup.scss";

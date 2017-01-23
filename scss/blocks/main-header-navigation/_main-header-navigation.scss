@@ -40,6 +40,8 @@
   &__item {
     float: left;
     position: static !important;
+    background: none !important;
+    padding-left: 0;
 
     @media (max-width: 990px) {
       display: block;

@@ -15,6 +15,11 @@
     text-align: left;
   }
 
+  &__item {
+    background: none !important;
+    padding-left: 0;
+  }
+
   &__link {
     display: block;
     text-align: left;

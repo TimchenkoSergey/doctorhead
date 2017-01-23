@@ -12,6 +12,8 @@
 
   &__item {
     float: left;
+    background: none !important;
+    padding-left: 0;
   }
 
   &__link {

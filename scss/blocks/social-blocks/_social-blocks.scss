@@ -9,6 +9,11 @@
     border: none;
   }
 
+  &__item {
+    background: none !important;
+    padding-left: 0;
+  }
+
   &__item.active &__link {
     display: block !important;
     float: left !important;

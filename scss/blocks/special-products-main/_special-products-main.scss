@@ -25,6 +25,11 @@
     }
   }
 
+  &__tabs-control {
+    background: none !important;
+    padding-left: 0;
+  }
+
   &__tabs-control.active &__tabs-control-link {
     background-color: #fff !important;
     color: #000000 !important;

@@ -221,29 +221,31 @@ $(function () {
     })();
 
     (function () {
-        var navigation        = $(".top-navigation-panel"),
-            block             = $(".top-navigation-pane__block"),
-            NAVIGATION_HEIGHT = 31;
+        if ($(window).width() > 991) {
+            var navigation        = $(".top-navigation-panel"),
+                block             = $(".top-navigation-pane__block"),
+                NAVIGATION_HEIGHT = 31;
 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 0){
-                navigation.css("position", "fixed");
-                navigation.css("z-index", "5");
-                block.css("height", NAVIGATION_HEIGHT + "px");
-            }
-            else {
-                navigation.css("position", "relative");
-                block.css("height", "0");
-            }
-        });
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 0){
+                    navigation.css("position", "fixed");
+                    navigation.css("z-index", "5");
+                    block.css("height", NAVIGATION_HEIGHT + "px");
+                }
+                else {
+                    navigation.css("position", "relative");
+                    block.css("height", "0");
+                }
+            });
+        }
     })();
 
     (function () {
-        $(".rating__input").rating({
-            filled: 'glyphicon glyphicon-star blue',
-            empty: 'glyphicon glyphicon-star white'
-        });
+        if ($(".rating__input").rating) {
+            $(".rating__input").rating({
+                filled: 'glyphicon glyphicon-star blue',
+                empty: 'glyphicon glyphicon-star white'
+            });
+        }
     })();
-
-
 });

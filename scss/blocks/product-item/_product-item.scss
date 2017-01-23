@@ -346,10 +346,16 @@
   }
   
   &__minus-but {
+    padding: 0;
     box-shadow: none;
     border: none;
     text-shadow: none;
     background-color: #fff;
+    color: #000000;
+
+    &:hover {
+      background-color: #fff;
+    }
 
     @media (max-width: 800px) {
       display: block;
@@ -358,10 +364,16 @@
   }
 
   &__plus-but {
+    padding: 0;
     box-shadow: none;
     border: none;
     text-shadow: none;
     background-color: #fff;
+    color: #000000;
+
+    &:hover {
+      background-color: #fff;
+    }
 
     @media (max-width: 800px) {
       display: block;
