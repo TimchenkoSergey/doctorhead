@@ -72,6 +72,10 @@
   opacity: 1 !important;
   font-size: 25px !important;
   background-color:transparent !important;
+
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
 }
 
 .owl-prev {
@@ -81,6 +85,10 @@
   opacity: 1 !important;
   font-size: 25px !important;
   background-color:transparent !important;
+
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
 }
 
 .white {
